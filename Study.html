@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar Dalam Belanja!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        :root {
+            --orange: #ff9900;
+            --blue: #146eb4;
+            --black: #000000;
+            --dark-gray: #232f3e;
+            --light-gray: #f2f2f2;
+            --white: #ffffff;
+        }
+
+        body {
+            padding-top: 60px;
+            background-color: var(--light-gray);
+        }
+        
+        header {
+            background-color: var(--dark-gray);
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: var(--orange);
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    
+        .nav-links {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--orange);
+        }
+        .study-section {
+            background: linear-gradient(135deg, var(--blue), var(--orange));
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .study-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: var(--white);
+            color: var(--black);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .study-content:hover {
+            transform: scale(1.02);
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: var(--blue);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: var(--orange);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .study-description {
+            font-size: 1.3rem;
+            line-height: 2;
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+        }
+
+        .study-icon {
+            font-size: 4rem;
+            color: var(--orange);
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .study-icon:hover {
+            transform: rotate(360deg);
+        }
+
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">ModEra</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                
+                <a href="Study.html">FYI</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="study-section">
+        <div class="study-content">
+            <h2 class="section-title">Pintar Dalam Belanja!</h2>
+            <i class="fas fa-laptop-code study-icon"></i>
+            <p class="study-description">
+                Teliti saat belanja online, perhatikan ketersediaan barang apakah sudah sold atau belum, dengan mengecek deskripsi produk.Barang akan di hapus atau akan ter ubah otomatis menjadi sold out jika suda terbeli.Barang akan terus update didalam ikon produk dan juga sosial media lainnya.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ModEra | Reviving Fashion, One Piece at a Time.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+</body>
+</html>

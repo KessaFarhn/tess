@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
+    <title>ModEra - Premium Thrifting Brand</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 pt-16">
+    <header class="fixed top-0 w-full bg-gray-900 text-white z-50 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <a class="text-2xl font-bold text-orange-500" href="#">ModEra</a>
+            <div class="md:hidden" id="hamburger">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+            <ul class="hidden md:flex space-x-6" id="toggle-menu">
+                <li><a class="hover:text-orange-500 transition duration-300" href="#home">Home</a></li>
+                <li><a class="hover:text-orange-500 transition duration-300" href="#products">Products</a></li>
+                <li><a class="hover:text-orange-500 transition duration-300" href="aboutus.html">About Us</a></li>
+                <li><a class="hover:text-orange-500 transition duration-300" href="payment.html">Payment</a></li>
+                <li><a class="hover:text-orange-500 transition duration-300" href="Study.html">FYI</a></li>
+                <li><a class="cart-toggle hover:text-orange-500 transition duration-300" href="#cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+        <div class="hidden md:hidden bg-gray-900 p-4" id="mobile-menu">
+            <a class="block text-white py-2 hover:text-orange-500 transition duration-300" href="#home">Home</a>
+            <a class="block text-white py-2 hover:text-orange-500 transition duration-300" href="#products">Products</a>
+            <a class="block text-white py-2 hover:text-orange-500 transition duration-300" href="aboutus.html">About Us</a>
+            <a class="block text-white py-2 hover:text-orange-500 transition duration-300" href="payment.html">Payment</a>
+            <a class="block text-white py-2 hover:text-orange-500 transition duration-300" href="Study.html">FYI</a>
+        </div>
+    </header>
+
+    <section class="hero bg-cover bg-center h-60vh flex items-center justify-center text-center text-white relative" id="home">
+        <img alt="A stylish and modern thrifting store with a variety of clothing items displayed" class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://i.ibb.co/3y8jLq8/modera.jpg"/>
+        <div class="hero-content max-w-2xl p-4 relative z-10">
+            <h1 class="text-5xl font-bold mb-4 text-black">Welcome to ModEra!</h1>
+            <p class="text-xl mb-6 text-black">Explore the finest and most exclusive thrifting collections.</p>
+            <a class="btn btn-primary bg-orange-500 text-white py-3 px-6 rounded-full hover:bg-orange-600 transition duration-300" href="#products">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products-section py-12" id="products">
+        <h2 class="text-4xl font-bold text-center mb-8">Latest Products</h2>
+        <div class="products-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto px-4">
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Gropcore collection - Size: L, Waterproof, thick Jacket, Suitable for outdoor" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/D1NXxbN/jacket-1.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">Gropcore Collection</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 160,000</p>
+                    <p class="mb-4">Size: M, Panjang: 67 cm, Lebar: 50 cm, Waterproof, thick Jacket, Suitable for outdoor</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="1">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Thick jacket - Size: L, Casual, reversible jacket, Suitable for cold weather and casual appearance" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/pdGmLvg/jaket-2.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">Thick Jacket</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 65,000</p>
+                    <p class="mb-4">Size: L, Panjang: 67 cm, Lebar: 55 cm, Casual, reversible jacket, Suitable for cold weather and casual appearance</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="2">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Vest semi - Size: L, Simple, Reversible Vest, Suitable for Match Outfit" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/y0LQx63/jaket-3.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">Vest Recenture</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 30,000</p>
+                    <p class="mb-4">Size: L, Panjang: 58 cm, Lebar: 49 cm, Simple, Reversible Vest, Suitable for Match Outfit</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="3">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Casual harrington - Size: L, Simple, Suitable for daily and casual" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/W0qpJcY/jaket-4.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">RAG MACHINE-Harringtone</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 180,000</p>
+                    <p class="mb-4">Size: L, Panjang: 64 cm, Lebar: 55 cm, Simple, Suitable for daily and casual</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="4">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Vest GAP - Size: L, Thick, Simple, Suitable for daily" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/8P2HC2Q/jaket-5.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">Vest GAP</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 50,000</p>
+                    <p class="mb-4">Size: XS, Panjang: 60 cm, Lebar: 50 cm, Thick, Simple, Suitable for daily</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="5">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Harrington Jacket - Size: L, suitable for motorcycles and casual appearance" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/zZjpzRh/jaket-6.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">JICHODO-Harringtone</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 60,000</p>
+                    <p class="mb-4">Size: M, Panjang: 63 cm, Lebar: 54 cm, Suitable for motorcycles and casual appearance</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="6">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Parasut jacket - Size: L, Thick, suitable for motorcycles" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/KbQGXVd/jaket-7.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">Rock Rider-Parasute</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 50,000</p>
+                    <p class="mb-4">Size: M, Panjang: 64 cm, Lebar: 55 cm, Thick, suitable for motorcycles</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="7">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105">
+                <img alt="Bomber Jacket - Size: L, thick, casual, Suitable for daily" class="product-image w-full h-48 object-cover" src="https://i.ibb.co.com/wS4nNN4/jaket-8.webp"/>
+                <div class="product-details p-4">
+                    <h3 class="product-title text-xl font-semibold mb-2">Heat Assist</h3>
+                    <p class="product-price text-blue-500 text-lg font-bold mb-2">Rp 50,000</p>
+                    <p class="mb-4">Size: L, Panjang: 64 cm, Lebar: 57 cm, Thick, casual, Suitable for daily</p>
+                    <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 add-to-cart" data-id="8">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="cart fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+        <div class="cart-close absolute top-4 right-4 text-2xl cursor-pointer">×</div>
+        <h2 class="text-2xl font-bold p-4">Your Cart</h2>
+        <div class="cart-items p-4"></div>
+        <div class="cart-total p-4">
+            <h3 class="text-xl font-bold">Total: Rp <span class="total-amount">0</span></h3>
+            <button class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 mt-4 checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="notification fixed bottom-8 right-8 bg-gray-800 text-white p-4 rounded shadow-lg hidden"></div>
+
+    <footer class="bg-gray-900 text-white py-12 mt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div class="footer-section">
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p>Premium thrifting marketplace offering the latest and most exclusive collections.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a class="hover:text-orange-500 transition duration-300" href="#home">Home</a></li>
+                    <li><a class="hover:text-orange-500 transition duration-300" href="payment.html">Payment</a></li>
+                    <li><a class="hover:text-orange-500 transition duration-300" href="#products">Products</a></li>
+                    <li><a class="hover:text-orange-500 transition duration-300" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="text-xl font-bold mb-4">Contact</h3>
+                <p>Email: kessagoodtrift@gmail.com</p>
+                <p>Phone: 081398224887</p>
+                <a class="btn btn-primary bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 mt-4" href="https://wa.me/6281398224887" target="_blank">Chat via WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartToggle = document.querySelector('.cart-toggle');
+            const cart = document.querySelector('.cart');
+            const cartClose = document.querySelector('.cart-close');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartItemsContainer = document.querySelector('.cart-items');
+            const cartCount = document.querySelector('.cart-count');
+            const totalAmount = document.querySelector('.total-amount');
+            const checkoutBtn = document.querySelector('.checkout-btn');
+            const notification = document.querySelector('.notification');
+
+            let cartItems = [];
+            let total = 0;
+
+            cartToggle.addEventListener('click', () => {
+                cart.classList.toggle('translate-x-full');
+            });
+
+            cartClose.addEventListener('click', () => {
+                cart.classList.add('translate-x-full');
+            });
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const productCard = e.target.closest('.product-card');
+                    const productId = e.target.getAttribute('data-id');
+                    const productTitle = productCard.querySelector('.product-title').textContent;
+                    const productPrice = parseInt(productCard.querySelector('.product-price').textContent.replace('Rp ', '').replace(',', ''));
+
+                    const existingItem = cartItems.find(item => item.id === productId);
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cartItems.push({ id: productId, title: productTitle, price: productPrice, quantity: 1 });
+                    }
+
+                    total += productPrice;
+                    updateCart();
+                    showNotification(`${productTitle} added to cart`);
+                });
+            });
+
+            checkoutBtn.addEventListener('click', () => {
+                const message = cartItems.map(item => `${item.title} x${item.quantity}`).join(', ');
+                const whatsappUrl = `https://wa.me/6281398224887?text=I%20would%20like%20to%20order:%20${encodeURIComponent(message)}%20Total:%20Rp%20${total}`;
+                window.open(whatsappUrl, '_blank');
+                cartItems = [];
+                total = 0;
+                updateCart();
+                cart.classList.add('translate-x-full');
+            });
+
+            function updateCart() {
+                cartItemsContainer.innerHTML = '';
+                cartItems.forEach(item => {
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item', 'flex', 'justify-between', 'items-center', 'mb-4');
+                    cartItem.innerHTML = `
+                        <div>
+                            <h4 class="font-bold">${item.title}</h4>
+                            <p>Rp ${item.price.toLocaleString()} x${item.quantity}</p>
+                        </div>
+                        <div class="text-right">
+                            <p>Rp ${(item.price * item.quantity).toLocaleString()}</p>
+                        </div>
+                    `;
+                    cartItemsContainer.appendChild(cartItem);
+                });
+
+                cartCount.textContent = cartItems.length;
+                totalAmount.textContent = total.toLocaleString();
+            }
+
+            function showNotification(message) {
+                notification.textContent = message;
+                notification.classList.remove('hidden');
+                setTimeout(() => {
+                    notification.classList.add('hidden');
+                }, 3000);
+            }
+        });
+
+        document.getElementById('hamburger').addEventListener('click', () => {
+            const navLinks = document.getElementById('toggle-menu');
+            navLinks.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

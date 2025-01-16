@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Pembayaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .payment-option:hover {
+            background-color: #f0f8ff;
+            border-color: #007bff;
+        }
+
+        .payment-option img {
+            height: 40px;
+        }
+
+        .payment-option .details {
+            text-align: left;
+            margin-left: 15px;
+            flex-grow: 1;
+        }
+
+        .details span {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .details small {
+            display: block;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informasi Pembayaran</h1>
+
+        <!-- Bank Mandiri -->
+        <div class="payment-option">
+            <img src="https://th.bing.com/th/id/OIP.7E7DMi-fy5lsC7Fntmt09gHaHa?rs=1&pid=ImgDetMain" alt="Bank Mandiri">
+            <div class="details">
+                <span>Bank Mandiri</span>
+                <small>Nomor Rekening: 60012331702</small>
+                <small>Atas Nama: MUHAMMAD FARHAN KESS</small>
+            </div>
+        </div>
+
+        <!-- DANA -->
+        <div class="payment-option">
+            <img src="https://selular.id/wp-content/uploads/2022/08/Logo-DANA.jpg" alt="DANA">
+            <div class="details">
+                <span>DANA</span>
+                <small>Nomor: 082130361207</small>
+                <small>Atas Nama: MUHAMMAD FARHAN KESSA</small>
+            </div>
+        </div>
+
+        <!-- GoPay -->
+        <div class="payment-option">
+            <img src="https://logowik.com/content/uploads/images/gopay7196.jpg" alt="GOPAY">
+            <div class="details">
+                <span>GoPay</span>
+                <small>Nomor: 0813-9822-4887</small>
+                <small>Atas Nama: Farhan Kessa</small>
+            </div>
+        </div>
+
+        <!-- Tombol Back to Home -->
+        <a href="index.html" class="back-button">Back to Home</a>
+
+        <footer>
+            &copy; 2025 ModEra - Premium Thrifting Brand. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
